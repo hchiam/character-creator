@@ -1,5 +1,7 @@
 .buttonRow {
+  position: relative; /* so those position: absolute visually-hidden spans respect scroll */
   overflow-x: auto;
+
   padding: 1rem 0;
   white-space: nowrap;
 }

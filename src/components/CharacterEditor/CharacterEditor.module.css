@@ -60,22 +60,15 @@
     min-height: auto;
   }
 
-  .header,
-  .title,
-  .description {
-    /* display: none; */
-  }
-
   .header {
-    position: absolute;
+    position: fixed;
     width: 45%;
     top: 1rem;
     right: 1rem;
-    /* text-align: right; */
   }
 
   .header * {
-    font-size: small;
+    font-size: medium;
   }
 
   .maxWidthWrapper {
@@ -88,7 +81,7 @@
     display: flex;
     gap: 1rem;
     overflow-x: scroll;
-    padding-inline: 55vw;
+    padding-left: 55vw;
     position: relative;
     top: 20vh;
   }
