@@ -5,6 +5,7 @@
 }
 
 .maxWidthWrapper {
+  position: relative; /* to make all major elements non-static, so use DOM order stacking */
 }
 
 .header {
