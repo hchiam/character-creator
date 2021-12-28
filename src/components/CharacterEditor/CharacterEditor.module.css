@@ -35,9 +35,12 @@
 
 .characterWrapper {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 35%;
+  /* top: 0;
+  right: 0; */
+  top: 10%;
+  left: 60%;
+  margin-left: 10px;
+  /* width: 35%; */
   min-height: 500px;
 }
 
