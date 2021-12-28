@@ -1,6 +1,7 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  isolation: isolate;
 }
 
 .maxWidthWrapper {
@@ -8,6 +9,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -23,8 +25,67 @@
   margin: 0;
 }
 
+.perspectiveDecoration {
+  background: hsl(195deg, 20%, 86%);
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
 .characterWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35%;
+  min-height: 500px;
 }
 
 .controlColumn {
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  /* mobile */
+
+  .characterWrapper {
+    width: 50vw;
+    left: 0;
+    bottom: 0;
+    max-height: 70vh;
+    min-height: auto;
+  }
+
+  .header,
+  .title,
+  .description {
+    /* display: none; */
+  }
+
+  .header {
+    position: absolute;
+    width: 45%;
+    top: 1rem;
+    right: 1rem;
+    /* text-align: right; */
+  }
+
+  .header * {
+    font-size: small;
+  }
+
+  .maxWidthWrapper {
+    padding-inline: 0;
+    margin: 0;
+  }
+
+  .controlColumn {
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-inline: 55vw;
+    position: relative;
+    top: 20vh;
+  }
 }
